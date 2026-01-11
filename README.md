@@ -5,11 +5,16 @@ Yuxin Ding, she/her
 
 In my W1 MG1 breakdown, we identified four game objects: Seeds, Player, UI/Text, and Main Camera. This analysis directly shaped my Unity implementation.
 
-**Seed Object:** The Seed's Position attribute becomes the plantPosition variable in PlantSeed(). I added plantPosition.z = _playerTransform.position.z - 0.1f so plants appear in front of the player. The Be planted action uses Instantiate(_plantPrefab, plantPosition, Quaternion.identity).
+**Seed Object:** The Seed's Position attribute becomes the plantPosition variable in PlantSeed(). 
+I added plantPosition.z = _playerTransform.position.z - 0.1f so plants appear in front of the player. 
+The Be planted action uses Instantiate(_plantPrefab, plantPosition, Quaternion.identity).
 
-**Player Object:** My Player.cs script implements the Player's Position attribute as _playerTransform.position and Speed as _speed. The Movement [WASD] action uses Input.GetAxisRaw("Horizontal") and Input.GetAxisRaw("Vertical") in Update(), calling MovePlayer() for position updates. Plant seeds [Space] is handled by PlantSeed().
+**Player Object:** My Player.cs script implements the Player's Position attribute as _playerTransform.position and Speed as _speed. 
+The Movement [WASD] action uses Input.GetAxisRaw("Horizontal") and Input.GetAxisRaw("Vertical") in Update(), calling MovePlayer() for position updates. 
+Plant seeds [Space] is handled by PlantSeed().
 
-**UI/Text Object:** My PlantCountUI.cs script on the UIManager GameObject manages two TextMeshPro texts: _remainingText (seeds left) and _plantedText (seeds planted). The UpdateSeeds() method updates these displays.
+**UI/Text Object:** My PlantCountUI.cs script on the UIManager GameObject manages two TextMeshPro texts: _remainingText (seeds left) and _plantedText (seeds planted). 
+The UpdateSeeds() method updates these displays.
 
 **Object Interactions:**
 
