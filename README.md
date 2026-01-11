@@ -12,7 +12,7 @@ Plant seeds [Space] is handled by PlantSeed().<br><br>
 
    **Seed Object:** The Seed's Position attribute becomes the plantPosition variable in PlantSeed(). 
    
-I added `plantPosition.z = _playerTransform.position.z - 0.1f` so plants appear in front of the player. 
+I added plantPosition.z = _playerTransform.position.z - 0.1f so plants appear in front of the player. 
 
 (To ensure the code works properly, I also distinguished their layers within Unity. Specifically, I placed the layer of "plant" at 1 while the layer of "player" was set to 0.)
 
