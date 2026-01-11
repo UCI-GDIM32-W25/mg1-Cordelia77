@@ -2,6 +2,7 @@
 ## Devlog
 Yuxin Ding, she/her
 
+
 In my W1 MG1 breakdown, we identified four game objects: Seeds, Player, UI/Text, and Main Camera. This analysis directly shaped my Unity implementation.
 
 **Seed Object:** The Seed's Position attribute becomes the plantPosition variable in PlantSeed(). I added plantPosition.z = _playerTransform.position.z - 0.1f so plants appear in front of the player. The Be planted action uses Instantiate(_plantPrefab, plantPosition, Quaternion.identity).
