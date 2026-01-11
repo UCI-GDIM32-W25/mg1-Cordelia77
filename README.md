@@ -4,7 +4,7 @@ Yuxin Ding, she/her<br><br>
 
 In my W1 MG1 breakdown, we identified four game objects: Player, Seeds, UI/Text, and Main Camera. This analysis directly shaped my Unity implementation.
 
-  **Player Object:** My Player.cs script implements the Player's Position attribute as _playerTransform.position and Speed as _speed. 
+  **Player Object:** My Player.cs script implements the Player's Position attribute as '_playerTransform.position' and Speed as '_speed'. 
   
 The Movement [WASD] action uses Input.GetAxisRaw("Horizontal") and Input.GetAxisRaw("Vertical") in Update(), calling MovePlayer() for position updates. 
 
