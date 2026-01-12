@@ -31,3 +31,6 @@ The UpdateSeeds() method updates these displays.<br><br>
 Overall, I was able to turn my W1 in-class activity into a working game by translating each planned object and interaction into actual Unity code and scene setup.
 
 
+## Open-Source Assets
+- [Sprout Lands sprite asset pack](https://cupnooble.itch.io/sprout-lands-asset-pack) - character and item sprites
+
